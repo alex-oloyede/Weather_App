@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Прогноз Погоды</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌤️ Прогноз Погоды</h1>
+            <button class="theme-toggle" id="theme-toggle" title="Переключить тему">
+                🌙
+            </button>
+        </div>
+        
+        <div class="controls">
+            <div class="search-row">
+                <input type="text" id="city-input" placeholder="Введите название города..." autocomplete="off">
+                <ul class="suggestions" id="suggestions"></ul>
+            </div>
+            <div class="error-msg" id="error-label">Город не найден</div>
+            <div class="button-row">
+                <div class="theme-label">Светлая / Тёмная тема</div>
+                <button class="btn btn-refresh" id="refresh-btn">🔄 Обновить всё</button>
+            </div>
+        </div>
+        
+        <div class="weather-grid" id="weather-grid">
+            <!-- Здесь будут отображаться карточки с погодой -->
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
